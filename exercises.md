@@ -3,7 +3,7 @@
 > **Bài làm cá nhân.** Trả lời bằng lời của chính bạn, dựa trên những gì bạn
 > quan sát được khi chạy code — không sao chép đáp án của người khác.
 >
-> Cách trả lời: thay dòng `> *Câu trả lời của bạn*` bằng câu trả lời.
+> Cách trả lời: thay dòng gợi ý bên dưới mỗi câu bằng câu trả lời của bạn.
 > `grade.py` đếm số câu đã trả lời (15 điểm cho 10 câu).
 >
 > Họ và tên: Nguyễn Đình Khang  Mã học viên: 2A202602584
@@ -49,7 +49,7 @@ docker images | grep agent
 
 Giải thích: phần dung lượng chênh lệch đó là những gì?
 
-> > Bản 1-stage là 1.7 GB, còn bản multi-stage là 297 MB, giảm khoảng 1.4 GB. Phần chênh lệch chủ yếu đến từ base image Python đầy đủ và các công cụ/phụ thuộc chỉ cần trong lúc build. Multi-stage chỉ copy dependency đã cài cùng source code cần chạy sang runtime, nên không mang theo các thành phần build không cần thiết.
+> Bản 1-stage là 1.7 GB, còn bản multi-stage là 297 MB, giảm khoảng 1.4 GB. Phần chênh lệch chủ yếu đến từ base image Python đầy đủ và các công cụ/phụ thuộc chỉ cần trong lúc build. Multi-stage chỉ copy dependency đã cài cùng source code cần chạy sang runtime, nên không mang theo các thành phần build không cần thiết.
 
 ---
 
